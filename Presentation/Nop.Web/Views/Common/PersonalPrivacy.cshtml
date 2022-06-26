@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_ColumnsOne";
+
+    //title
+    NopHtml.AddTitleParts(T("PageTitle.PersonalPrivacy").Text);
+    //page class
+    NopHtml.AppendPageCssClassParts("html-contact-page");
+}
+<div class="page contact-page">
+    <div class="page-body">
+        @await Component.InvokeAsync("TopicBlock", new { systemName = "PersonalPrivacy" })
+     </div>
+ </div>

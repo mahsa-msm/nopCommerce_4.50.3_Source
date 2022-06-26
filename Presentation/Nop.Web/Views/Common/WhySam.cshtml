@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_ColumnsOne";
+
+    //title
+    NopHtml.AddTitleParts(T("PageTitle.WhySam").Text);
+    //page class
+    NopHtml.AppendPageCssClassParts("html-contact-page");
+}
+<div class="page contact-page">
+    <div class="page-body">
+        @await Component.InvokeAsync("TopicBlock", new { systemName = "WhySam" })
+     </div>
+ </div>
